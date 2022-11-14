@@ -1,0 +1,514 @@
+@charset "UTF-8";
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* importações de fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+/* HEADER */
+
+header {
+    background-image: linear-gradient(to left, #a69430, #6e631f);
+    height: 100px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+header > h1 {
+    padding-bottom: 30px;
+    padding-left: 5px;
+    color:white;
+    cursor: pointer;
+    text-shadow: 2px 5px 5px black;
+    font-size: 3em;
+}
+
+header > nav > a:hover {
+    color: #941F6D;
+}
+#botaomenu {
+    height: 50px;
+    cursor: pointer;
+}
+/* menu celular */
+div#menu {
+    height: 270px;
+    width: 180px;
+    margin-bottom: 100px;
+    background-color: rgba(233, 233, 239, 0.912);
+    display: none;
+    position: absolute;
+    right: 12px;
+    top: 103px;
+
+}
+div#menu > nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div#menu > nav > a {
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    font-size: 2em;
+}
+div#menu > nav > a:hover {
+    color: rgb(82, 79, 79);
+
+}
+/* section paisagem */
+
+#paisagem {
+    background-image: url('imagens/fundo.praia.sec.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#paisagem > h2 {
+    color: white;
+    margin-bottom: 10px;
+    font-family: 'Cookie', cursive;
+    font-size: 28px;
+    text-align: center;
+}
+#paisagem > h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.btn {
+    background-color:rgb(190, 187, 187);
+    padding: 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 2em;
+    box-shadow: 2px 2px 5px black;
+}
+.btn:hover {
+    background-color: rgb(173, 171, 171);
+}
+
+
+/* section hotel */
+
+#hotel {
+    height: auto;
+    background-color: rgb(255, 255, 255);
+
+}
+#hotel > h3 {
+    font-size: 1.8em;
+    text-align:center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+#hotel > p {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+#hotel > hr {
+    width: 150px;
+    margin: auto;
+    margin-bottom: 15px;
+    background-color: black;
+}
+.imagens {
+    background-color: rgb(255, 255, 255);
+}
+.img1 {
+    background-image: url('imagens/pexels-photo-1450360.jpeg');
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:400px;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.img2 {
+    background-image: url('imagens/pexels-photo-1628086.jpeg');
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:400px;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+
+}
+.img3 {
+    background-image: url('imagens/pexels-photo-338504.jpeg');
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:400px;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.img4 {
+    background-image: url('imagens/pexels-photo-4603460.jpeg');
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:400px;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.img5 {
+    background-image: url('imagens/pexels-photo-4603461.jpeg');
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:400px;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+/* características */
+
+#caract {
+    background-color: rgb(3, 3, 3);
+    height: auto;
+}
+#caract > h3 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+#caract > hr {
+    color: white;
+    width: 100px;
+    margin: auto;
+    border-style: solid;
+    background-color: white;
+    margin-bottom: 15px;
+}
+#info {
+    background-color: rgb(0, 0, 0);
+}
+
+#caract > #info h4 {
+    color: rgb(163, 163, 4);
+    font-size: 4em;
+    text-align: center;
+}
+#caract > #info p {
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+    text-align: center;
+}
+#caracte {
+    font-size: 15em;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 60px;
+    margin-top: 50px;
+    color: rgb(129, 129, 5);
+    cursor: pointer;
+
+}
+#icone {
+    background-color: rgba(255, 255, 255, 0);
+    width: 230px;
+    margin: auto;
+}
+
+
+/* Newsletter */
+
+#Newsletter {
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+
+}
+#Newsletter > h3 {
+    font-size: 3em;
+    color: rgb(129, 129, 5);
+    text-align: center;
+    text-shadow: 1px 1px 3px black;
+    padding-top: 25px;
+}
+#Newsletter > p {
+    color: rgb(129, 129, 5);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+#Newsletter > hr {
+    width: 150px;
+    margin: auto;
+    background-color:rgb(129, 129, 5);
+    margin-bottom: 25px;
+    height: 1px;
+}
+.coremail {
+    color: rgb(129, 129, 5);
+    font-size: 3em;
+    display: block;
+    text-align: center;
+    margin-bottom: 25px;
+}
+input#email {
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 50px;
+}
+input#email:focus-within {
+    background-color: rgb(207, 205, 205);
+}
+
+#cadast {
+    height: 50px;
+    width: 100px;
+    margin: auto;
+    display: block;
+    margin-top: 25px;
+    background-color: rgb(129, 129, 5);
+    cursor: pointer;
+
+}
+
+#cadast:hover {
+    background-color: rgb(102, 102, 4);
+    cursor: pointer;
+}
+
+/* footer */ 
+
+footer > p {
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+
+footer > p > a {
+    color: white;
+    text-decoration: none;
+}
+footer > p > a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    height: 120px;
+    background-color: black;
+}
+
+#tablet-desktop {
+    display:none;
+}
+header > nav > a {
+    text-decoration: none;
+    color: white;
+    margin: 2px;
+    font-size: auto;
+    display: block;
+    margin-left: 10px;
+}
+
+/* BREAKPOINTS */
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    #tablet-desktop {
+        display: flex;
+        font-size: 2em;
+    }
+    header {
+        height: 135px;
+    }
+    .img1 {
+        width: 700px;
+        height: 400px;
+        transition: width 0.7s, height 1s;
+    }
+    .img2 {
+        width: 700px;
+        height: 400px; 
+        transition: width 0.7s, height 1s;    
+    }           
+    .img3 {
+        width: 700px;
+        height: 400px;
+        transition: width 0.7s, height 1s;
+    }
+    .img4 {
+        width: 700px;
+        height: 400px;
+        transition: width 0.7s, height 1s;
+    }
+    .img5 {
+        width: 700px;
+        height: 400px;
+        transition: width 0.7s, height 1s;
+    }
+
+    #botaomenu {
+        display: none;
+    }
+    #Newsletter > hr {
+        width: 500px;
+        transition: width 0.8s;
+
+    }
+    #hotel > hr {
+        width: 500px;
+        transition: width 0.8s;
+    }
+
+    footer {
+        height: 80px;
+    }
+
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    #tablet-desktop {
+        display: flex;
+        font-size: 2em;
+    }
+    .img1 {
+        width: 750px;
+        height: 400px;
+        transition: width 0.7s, height 1s;
+    }
+    .img2 {
+        width: 750px;
+        height: 400px; 
+        transition: width 0.7s, height 1s;    
+    }           
+    .img3 {
+        width: 750px;
+        height: 400px;
+        transition: width 0.7s, height 1s;
+    }
+    .img4 {
+        width: 750px;
+        height: 400px;
+        transition: width 0.7s, height 1s;
+    }
+    .img5 {
+        width: 750px;
+        height: 400px;
+        transition: width 0.7s, height 1s;
+    }
+    footer {
+        height: 100px;
+    }
+    #Newsletter > hr {
+        width: 700px;
+        transition: width 0.8s;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    .imagens {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .img1 {
+        width: 500px;
+        height: 300px;
+        transition: width 0.7s, height 1s;
+        margin: 10px;
+    }
+    .img2 {
+        width: 400px;
+        height: 300px;
+        transition: width 0.7s, height 1s;  
+        margin: 10px;  
+    }           
+    .img3 {
+        width: 400px;
+        height: 300px;
+        transition: width 0.7s, height 1s;
+        margin: 10px;
+    }
+    .img4 {
+        width: 500px;
+        height: 400px;
+        transition: width 0.7s, height 1s;
+        margin: 10px;
+    }
+    .img5 {
+        width: 700px;
+        height: 400px;
+        transition: width 0.7s, height 1s;
+        margin: 10px;
+    }
+    footer {
+        height: 70px;
+    }
+    #tablet-desktop {
+        display: flex;
+        font-size: 2em;
+    }
+    #botaomenu {
+        display: none;
+    }
+    #hotel > hr {
+        width: 800px;
+        transition: width 0.7s;
+
+    }
+    #info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+    #icone > span {
+        font-size: 12em;
+    }
+    #caract > #info > p {
+        font-size: 2em;
+    }
+    #caract > #info > h4 {
+        font-size: 2em;
+    }
+    #tela-grande {
+        margin: 25px;
+        width: 400px;
+    }
+    #Newsletter > hr {
+        width: 800px;
+        transition: width 0.8s;
+    }
+    header {
+        height: 135px;
+    }
+    header > h1 {
+        font-size: 4.7em;
+    }
+    #tablet-desktop > a {
+        font-size: 1.4em;
+    }
+}
